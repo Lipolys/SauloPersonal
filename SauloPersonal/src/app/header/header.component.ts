@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
+import {WhatsappService} from "../whatsapp.service";
 
 @Component({
   selector: 'app-header',
@@ -15,5 +16,9 @@ export class HeaderComponent {
     if (servicoElement) {
       servicoElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
+  }
+  constructor(private whatsappService: WhatsappService) { }
+  redirectToWhatsApp() {
+    this.whatsappService.redirectToWhatsApp();
   }
 }
