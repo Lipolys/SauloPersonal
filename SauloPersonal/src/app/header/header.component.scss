@@ -1,0 +1,131 @@
+.header {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 116px;
+  width: 100%;
+  top: 10px;
+  transition: all .5s;
+  z-index: 100;
+  background-color: rgba(157, 167, 178, 0.1);
+  box-shadow: 0 4px 8px rgba(157, 167, 178, 0.1);
+}
+
+.logo-container {
+  position: relative;
+  width: 260px;
+  height: 75px;
+}
+
+.blur-logo {
+  background: var(--branco);
+  border-radius: 50px;
+  width: 60%;
+  height: 60%;
+  filter: blur(45px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo-sf {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.barra-de-navegacao {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  list-style: none;
+}
+
+li {
+  cursor: pointer;
+  font-size: var(--font-titulo);
+  color: var(--branco);
+}
+
+.botao-verde-header {
+  background: var(--verde);
+  border-radius: 100px;
+  padding: 12px;
+  font-family: Gotham-Medium, sans-serif;
+  text-align: center;
+  box-shadow: var(--box-shadow-default);
+}
+
+.botao-verde-header div {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: var(--preto);
+}
+
+.checkbtn {
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .header {
+    height: 60px;
+    background-color: rgba(157, 167, 178, 0.7);
+    box-shadow: 0 4px 8px rgba(157, 167, 178, 0.7)
+  }
+
+  .logo-container {
+    width: 200px;
+    height: 60px;
+  }
+
+  .barra-de-navegacao {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 50%;
+    height: auto;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+    margin: 0;
+    z-index: 10;
+    color: var(--branco);
+    text-shadow: var(--text-shadow);
+    background-color: rgba(157, 167, 178, 0.7);
+    box-shadow: 0 4px 8px rgba(157, 167, 178, 0.7);
+
+  }
+
+  .barra-de-navegacao li {
+    width: 100%;
+    border-bottom: 1px solid var(--branco);
+    padding-bottom: 10px;
+    font-size: 25px;
+  }
+
+  .botao-verde-header {
+    display: none;
+  }
+
+  .checkbtn {
+    display: block;
+    cursor: pointer;
+    float: right;
+  }
+
+  #check:checked + .checkbtn + .barra-de-navegacao {
+    display: flex;
+  }
+}

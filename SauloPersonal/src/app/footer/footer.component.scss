@@ -1,0 +1,81 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.contatos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+
+.numero {
+  color: var(--verde, #00d778);
+  text-align: left;
+  font-family: "Gotham-Medium", sans-serif;
+  font-size: var(--font-apelo);
+}
+
+.email {
+  color: var(--branco);
+  text-align: left;
+  font-family: "Gotham-Bold", sans-serif;
+  font-size: 37px;
+}
+
+.endereco {
+  color: var(--branco);
+  text-align: left;
+  font-family: "Gotham-Medium", sans-serif;
+  font-size: 32px;
+}
+
+.redes-sociais {
+  color: var(--branco);
+  font-size: 32px;
+  font-family: "Gotham-Book", sans-serif;
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (max-width: 900px) {
+  .contatos {
+    gap: 10px;
+  }
+
+  .logo-fa {
+    display: none;
+  }
+
+  .numero {
+    font-size: 40px;
+  }
+
+  .email {
+    font-size: 18px;
+  }
+
+  .endereco {
+    font-size: 15px;
+  }
+
+  .redes-sociais {
+    font-size: 15px;
+  }
+}
+

@@ -1,0 +1,83 @@
+.servico-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.servico {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  gap: 30px;
+  padding: 20px 50px;
+  background-color: var(--azul);
+  box-shadow: var(--box-shadow-default);
+  text-align: left;
+  width: 64%;
+}
+
+.titulo-servico {
+  font-size: var(--font-botoes-apelo);
+  font-family: Gotham-Medium, sans-serif;
+  color: var(--verde);
+  text-align: center;
+}
+
+.servico-grupo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  font-family: "Gotham-Book", sans-serif;
+  color: var(--branco)
+}
+
+.treino-especializado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  gap: 20px;
+  flex: 1;
+}
+
+.satisfacao-garantida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  gap: 20px;
+  flex: 1;
+}
+
+.pagamento-facilitado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  gap: 20px;
+  flex: 1;
+}
+
+img {
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .servico{
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .servico-grupo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-content: center;
+    font-family: "Gotham-Book", sans-serif;
+    color: var(--branco)
+  }
+
+}

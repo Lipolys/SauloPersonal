@@ -1,0 +1,9 @@
+<div id="depoimentos" class="depoimentos-container">
+  <div class="bloco-depoimento" *ngFor="let depoimento of depoimentos">
+    <img ngSrc="{{depoimento.foto}}" [width]="100" [height]="100" loading="lazy" />
+    <div class="depoimento">
+      <div style="font-family: Gotham-Bold, sans-serif">{{depoimento.nome}}</div>
+      <div>{{depoimento.depoimento}}</div>
+    </div>
+  </div>
+</div>

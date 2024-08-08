@@ -1,0 +1,19 @@
+<nav class="header">
+  <div class="logo-container">
+    <div class="blur-logo"></div>
+    <img class="logo-sf" ngSrc="logo-sf.png" [fill]="true" [priority]="true" alt="Saulo Oliveira Personal Trainer"/>
+  </div>
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <img ngSrc="bars.png" height="36" width="36" [priority]="true" alt="barra de navegação"/>
+  </label>
+  <ul class="barra-de-navegacao">
+    <li (click)="scrollToElement('sobre')">Sobre</li>
+    <li (click)="scrollToElement('servico')">Serviço</li>
+    <li (click)="scrollToElement('depoimentos')">Depoimentos</li>
+    <li (click)="scrollToElement('footer')">Contato</li>
+    <li class="botao-verde-header">
+      <div>GARANTA JÁ!</div>
+    </li>
+  </ul>
+</nav>
