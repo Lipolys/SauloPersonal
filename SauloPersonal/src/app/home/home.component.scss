@@ -1,4 +1,47 @@
 .home {
-  background-color: var(--azul);
   font-family: Gotham-Book, sans-serif;
+  position: relative;
+}
+
+.primeira-parte {
+  background-image: url('../../../public/foto-24.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-blend-mode: multiply;
+  background-color: var(--cinza);
+  padding-bottom: 101px;
+  margin-top: -60px;
+  padding-top: 200px;
+  z-index: -100;
+}
+
+.segunda-parte {
+  background-color: var(--preto);
+  box-shadow: 0 0 20px 20px var(--preto), 0 20px 20px 20px var(--preto);
+  z-index: 99;
+}
+.terceira-parte {
+  background-image: url('../../../public/foto-27.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-blend-mode: multiply;
+  background-color: var(--cinza);
+  margin-top: -60px;
+  z-index: 102;
+}
+
+.quarta-parte {
+  background-color: var(--azul);
+  padding-top: 60px;
+  margin-top: -60px;
+  box-shadow: 0 0 20px 20px var(--azul);
+  z-index: 101;
+}
+
+@media (max-width: 900px) {
+  .primeira-parte {
+    background-position: 80%;
+  }
 }
