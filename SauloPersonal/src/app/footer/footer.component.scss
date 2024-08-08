@@ -4,13 +4,15 @@
 }
 
 .footer {
-  width: 80%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 10px;
   position: relative;
+  padding-bottom: 100px;
 }
 
 .contatos {
